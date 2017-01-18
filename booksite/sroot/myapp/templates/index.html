@@ -1,0 +1,17 @@
+{%load static staticfiles%}
+<html>
+	{%include 'include.html'%}
+	<body>
+		<h1 id="heading">global setting</h1>		
+	
+		<p>{{global_test}}<p>
+		<a href="{{site_url}}">cainiaozaixian</a>
+		<p>{{site_name}}</p>
+		<p>{{site_name}}</p>
+		<a href="{%url 'h'%}">hello test</a>
+		<p>{{site_name}}</p>
+		
+		<img src="{%static '1.jpg'%}">image</img>
+	</body>
+
+</html>

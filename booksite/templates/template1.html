@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Template1</title>
+	
+</head>
+<body>
+	<h1>{{list.1|upper|lower}}</h1>
+	<h1>{{dict.c | add:'2'}}</h1>
+	<h1>{{class.a}}</h1>
+	<h1>{{class.fun}}</h1>
+	
+	{% if value %}
+	 <p>good good learn,day day up</p>
+	{% else %}
+	 <p>read more books</p>
+	{%endif%}
+
+	{%for a in list%}
+	 <h2>{{a}}</h2>
+	{%endfor%}
+
+	{%load poll_extras%}
+
+	<h1>tags:{{message | cut:" "}} </h1>
+
+</body>
+</html>
