@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>尚合</title>
+    <style media="screen">
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        ul {
+          list-style: none
+        }
+        a {
+          text-decoration: none;
+        }
+        .w {
+          width: 980px;
+        }
+        .head {
+          width: 100%;
+          height: 117px;
+          background: url("./head_bg.png");
+          border-top: 1px solid white;
+        }
+        .top {
+          width: 980px;
+          height: 117px;
+          margin: 0 auto;
+        }
+        .top-l {
+          width: 180px;
+          height: 42px;
+          background: url("./logo.png") no-repeat;
+          margin-top: 20px;
+          float: left;
+        }
+        .top-r {
+          width: 200px;
+          height: 30px;
+          margin-top: 20px;
+          float: right;
+        }
+        input {
+          height: 30px;
+          border: 0px;
+          float: left;
+        }
+        .int-1 {
+          width: 161px;
+          background: url("./input_r1_c1.png");
+          padding-left: 6px;
+          outline-style: none;
+        }
+        .int-2 {
+          width: 33px;
+          background: url("./input_r1_c2.png");
+          outline-style: none;
+        }
+        .bot {
+          clear: both;
+        }
+        .head .top ul li {
+          width: 130px;
+          height:55px;
+          line-height: 55px;
+          text-align: center;
+          font-weight: 900;
+          border-right: 1px solid #ececec;
+          float: left;
+        }
+        a {
+          color: black;
+        }
+        a:hover {
+          color: red;
+        }
+        .bdy {
+          height: 597px;
+          background: url("./banner.png");
+          margin: 0 auto;
+        }
+        .bdy2 {
+          width: 34px;
+          height: 14px;
+          background: url("./point.png");
+          margin: 10px auto;
+        }
+        .bdy3 {
+          width: 100%;
+          height: 30px;
+          border: 1px solid #efefef;
+          background: #fbfbfb;
+        }
+        .bdy3 .bdy3-b-l {
+          width: 980px;
+          line-height: 30px;
+          margin: 0 auto;
+        }
+        h4 {
+          float: left;
+          font-size: 14px;
+          margin-top: 4px;
+        }
+        span {
+          font-size: 14px;
+        }
+        img {
+          margin-top: 6px;
+          margin-left: 438px;
+        }
+        .bdy4 {
+          width: 980px;
+          height: 230px;
+          /*background: red;*/
+          margin: 10px auto;
+        }
+        .bdy4s {
+          height: 230px;
+          border: 1px solid #e4e4e4;
+          float: left;
+        }
+        .bdy4-1 {
+          width:310px;
+        }
+        .bdy4-2 {
+          width:370px;
+          margin-left: 12px;
+        }
+        .bdy4-3 {
+          width:270px;
+          margin-left: 12px;
+        }
+        .bdy4s-t {
+          height: 14px;
+          background: url("./canvas_r4_c4.png") left center no-repeat;
+          line-height: 14px;
+          margin-top: 10px;
+          margin-left: 12px;
+        }
+        .bdy4s-t h4 {
+          color: #7cb906;
+          padding-left: 20px;
+        }
+        .bdy4s-t span {
+          margin-left: 240px;
+        }
+        .bdy4-1 .bdy4s-b {
+          width: 300px;
+          height: 190px;
+          background: url("./canvas1.png");
+          margin-top: 9px;
+        }
+        .bdy4-2 .bdy4s-b ul {
+          margin-top: 6px;
+        }
+        .bdy4-2 .bdy4s-b ul li {
+          width: 320px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 1px;
+          border-bottom: 1px dashed black;
+          margin-left: 25px;
+        }
+        .bdy4-2 .bdy4s-b ul li span {
+            color: red;
+        }
+        .bdy4-3 .bdy4s-t .bdy4s-b1 ul {
+          padding-top: 30px;
+          margin-left: 26px;
+        }
+        .bdy4-3 .bdy4s-t .bdy4s-b1 ul li {
+            width: 200px;
+            height: 14px;
+            line-height: 14px;
+            font-size: 14px;
+            border-left: 2px solid #7cb906;
+            margin-top: 7px;
+            padding-left: 6px;
+        }
+        .bdy4-3 .bdy4s-t .bdy4s-b2 ul {
+            margin-top: 40px;
+            padding-left: 15px;
+        }
+        .bdy4-3 .bdy4s-t .bdy4s-b2 ul li {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .btn  {
+          width: 100%;
+          height: 306px;
+          background: url("./canvas_r4_c2.png");
+          margin-top: 48px;
+        }
+        .btn-b {
+          height: 306px;
+          margin: 0 auto;
+        }
+        .btn .btn-b ul {
+          float: left;
+          padding: 0 20px;
+          margin-top: 20px;
+        }
+        .btn .btn-b ul li h4 {
+          color: #c7c7c7;
+        }
+        .btn .btn-b ul .k {
+          margin-top: 40px;
+        }
+        .btn .btn-b ul li a{
+          font-size: 12px;
+          color: gray;
+          margin-top: 6px;
+        }
+        .btn .btn-b ul li a:hover{
+          color: red;
+        }
+        .btn-f {
+          margin: -76px auto;
+        }
+        .btn-f p {
+          text-align: center;
+          font-size: 14px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+        <div class="top">
+            <div class="top-l"></div>
+            <div class="top-r">
+                <input class="int-1" type="text" name="name" value="">
+                <input class="int-2" type="button" name="name" value="">
+            </div>
+            <div class="bot">
+                <ul>
+                  <li><a href="#">首页</a></li>
+                  <li><a href="#">智能手机</a></li>
+                  <li><a href="#">平板电脑</a></li>
+                  <li><a href="#">配件</a></li>
+                  <li><a href="#">服务支持</a></li>
+                  <li><a href="#">关于尚合</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="bdy w"></div>
+    <div class="bdy2"></div>
+    <div class="bdy3">
+      <div class="bdy3-b-l">
+        <h4>最新公告：</h4><span>尚合Aone智能手机网证已经获得工信部门审批下发。尚合官网</span>
+        <img src="./share.png" alt="" />
+      </div>
+
+    </div>
+    <div class="bdy4">
+        <div class="bdy4-1 bdy4s">
+            <div class="bdy4s-t">
+                <h4>新品发布</h4>
+            </div>
+            <div class="bdy4s-b">
+
+            </div>
+        </div>
+        <div class="bdy4-2 bdy4s">
+          <div class="bdy4s-t">
+              <h4>新闻中心</h4>
+              <span><a href="#">更多</a></span>
+          </div>
+          <div class="bdy4s-b">
+              <ul>
+                <li><a href="#"><span>致歉公告</span></a></li>
+                <li><a href="#">首批尚合Aonet已全部售馨！</a></li>
+                <li><a href="#">【媒体报道】国产高性价比 尚合Aonet四核手机评测</a></li>
+                <li><a href="#">我司产品已经通过了国家强制性产品3C认证</a></li>
+                <li><a href="#">尚合Aone智能手机入网已经获得工信部能审批下发</a></li>
+                <li><a href="#">我司通过ISO9001:2008国际质量管理体系认证</a></li>
+              </ul>
+          </div>
+
+        </div>
+        <div class="bdy4-3 bdy4s">
+          <div class="bdy4s-t">
+              <h4>技术与支持</h4>
+              <div class="bdy4s-b1">
+                  <ul>
+                    <li><a href="#">售后服务</a></li>
+                    <li><a href="#">售后服务</a></li>
+                    <li><a href="#">联保网点</a></li>
+                    <li><a href="#">常见问题FAQ?</a></li>
+                  </ul>
+              </div>
+              <div class="bdy4s-b2">
+                <ul>
+                  <li>深圳是汇聚众合科技发展有限公司</li>
+                  <li>服务热线：400-633-7922</li>
+                </ul>
+              </div>
+          </div>
+          <div class="bdy4s-b">
+
+          </div>
+        </div>
+    </div>
+    <div class="btn">
+      <div class="btn-b w">
+          <ul>
+            <li><h4>尚合首页</h4></li>
+            <li class="k"><a href="#">返回首页</a></li>
+          </ul>
+          <ul>
+            <li><h4>智能手机</h4></li>
+            <li class="k"><a href="#">Aone-t</a></li>
+            <li><a href="#">Aone</a></li>
+          </ul>
+          <ul>
+            <li><h4>平板电脑</h4></li>
+            <li class="k"><a href="#">尚PAD S200</a></li>
+            <li><a href="#">尚PAD S100</a></li>
+            <li><a href="#">尚PAD SH-Q7</a></li>
+            <li><a href="#">尚PAD SH-Q5</a></li>
+          </ul>
+          <ul>
+            <li><h4>配件中心</h4></li>
+            <li class="k"><a href="#">Aone 智能手机</a></li>
+          </ul>
+          <ul>
+            <li><h4>服务与支持</h4></li>
+            <li class="k"><a href="#">售后服务</a></li>
+            <li><a href="#">投诉与建议</a></li>
+            <li><a href="#">联保网点</a></li>
+            <li><a href="#">常见问题FAQ</a></li>
+            <li><a href="#">订单查询</a></li>
+            <li><a href="#">下载专区</a></li>
+          </ul>
+          <ul>
+            <li><h4>关于我们</h4></li>
+            <li class="k"><a href="#">公司介绍</a></li>
+            <li><a href="#">企业文化</a></li>
+            <li><a href="#">工作机会</a></li>
+            <li><a href="#">法律声明</a></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+          <ul>
+            <li><h4>新闻中心</h4></li>
+            <li class="k"><a href="#">公司新闻</a></li>
+            <li><a href="#">媒体报道</a></li>
+            <li><a href="#">行业动态会</a></li>
+          </ul>
+          <ul>
+            <li><h4>常用链接</h4></li>
+            <li class="k"><a href="#">百度</a></li>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">新浪微博</a></li>
+          </ul>
+      </div>
+      <div class="btn-f w">
+          <p>
+            ©2011-2012版权所有 深证市汇聚众合科技发展有限公司 （品牌：尚合-SAMHAVE）服务热线：400-633-7922
+          </p>
+          <p>
+            经营许可证编号：粤ICP备11077821号-1
+          </p>
+            <img src="./last.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
